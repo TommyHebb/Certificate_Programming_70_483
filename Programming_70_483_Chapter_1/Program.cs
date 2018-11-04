@@ -10,7 +10,7 @@ namespace Programming_70_483_Chapter_1
     {
         static void Main(string[] args)
         {
-
+            Ex001_Thread_Basic.Exec();
         }
     }
 }
