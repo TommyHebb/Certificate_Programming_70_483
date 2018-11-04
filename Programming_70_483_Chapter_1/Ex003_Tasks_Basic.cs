@@ -1,17 +1,18 @@
-﻿using System;
+﻿using Programming_70_483_Chapter_1.Exercise_classes;
+using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace Programming_70_483_Chapter_1
 {
-    public class Ex003_Tasks_Basic
+    public class Ex003_Tasks_Basic : Exercises
     {
-        public string Name { get; set; } = "Ex003_Tasks_Basic";
+        public override string Name { get; set; } = "Ex003_Tasks_Basic";
 
         public Ex003_Tasks_Basic() { }
 
-        public void Exec()
+        public override void Exec()
         {
             Task<int>[] tasks = new Task<int>[3];
             tasks[0] = Task.Run(() => { Thread.Sleep(2000); return 1; });

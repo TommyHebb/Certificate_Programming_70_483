@@ -1,15 +1,16 @@
-﻿using System;
+﻿using Programming_70_483_Chapter_1.Exercise_classes;
+using System;
 using System.Threading;
 
 namespace Programming_70_483_Chapter_1
 {
-    public class Ex001_Thread_Basic
+    public class Ex001_Thread_Basic : Exercises
     {
-        public string Name { get; set; } = "Ex001_Thread_Basic";
+        public override string Name { get; set; } = "Ex001_Thread_Basic";
 
         public Ex001_Thread_Basic() { }
 
-        public void Exec()
+        public override void Exec()
         {
             Thread t = new Thread(new ParameterizedThreadStart(Common.ThreadMethod));
             t.Start(1); // '1' is the param offered to the ThreadMethod.
