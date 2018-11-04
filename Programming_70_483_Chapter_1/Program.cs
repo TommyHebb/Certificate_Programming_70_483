@@ -11,9 +11,10 @@ namespace Programming_70_483_Chapter_1
     {
         static void Main(string[] args)
         {
-            Exercises ex001 = new Ex001_Thread_Basic();
-            Exercises ex002 = new Ex002_Thread_Background();
-            Exercises ex003 = new Ex003_Tasks_Basic();
+
+            Exercise ex001 = new Ex001_Thread_Basic();
+            Exercise ex002 = new Ex002_Thread_Background();
+            Exercise ex003 = new Ex003_Tasks_Basic();
 
             Console.WriteLine(ex001.ToString());
             ex001.Exec();

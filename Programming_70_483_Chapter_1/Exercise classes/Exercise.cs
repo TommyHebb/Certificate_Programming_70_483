@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Programming_70_483_Chapter_1.Exercise_classes
 {
-    public abstract class Exercises
+    public abstract class Exercise
     {
         public abstract string Name { get; set; }
 

@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace Programming_70_483_Chapter_1
 {
-    public class Ex001_Thread_Basic : Exercises
+    public class Ex001_Thread_Basic : Exercise
     {
         public override string Name { get; set; } = "Ex001_Thread_Basic";
 
