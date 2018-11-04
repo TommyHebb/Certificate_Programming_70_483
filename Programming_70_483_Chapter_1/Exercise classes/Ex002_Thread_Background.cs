@@ -6,7 +6,9 @@ namespace Programming_70_483_Chapter_1
 {
     public class Ex002_Thread_Background : Exercise
     {
-        public override string Name { get; set; } = "Ex002_Thread_Background";
+        public override string Name { get; set; } = "Thread - Background";
+
+        public override int Number { get; set; } = 2;
 
         public Ex002_Thread_Background() { }
 
@@ -21,7 +23,7 @@ namespace Programming_70_483_Chapter_1
 
         public override string ToString()
         {
-            return string.Format("Oefening: {0} ", Name);
+            return string.Format("Oefening: {0} - {1} ", Number, Name);
         }
     }
 }

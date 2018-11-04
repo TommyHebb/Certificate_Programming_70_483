@@ -10,6 +10,8 @@ namespace Programming_70_483_Chapter_1.Exercise_classes
     {
         public abstract string Name { get; set; }
 
+        public abstract int Number { get; set; }
+
         public abstract void Exec();
     }
 }

@@ -8,7 +8,9 @@ namespace Programming_70_483_Chapter_1
 {
     public class Ex003_Tasks_Basic : Exercise
     {
-        public override string Name { get; set; } = "Ex003_Tasks_Basic";
+        public override string Name { get; set; } = "Tasks - Basic";
+
+        public override int Number { get; set; } = 3;
 
         public Ex003_Tasks_Basic() { }
 
@@ -31,7 +33,7 @@ namespace Programming_70_483_Chapter_1
 
         public override string ToString()
         {
-            return string.Format("Oefening: {0} ", Name);
+            return string.Format("Oefening: {0} - {1} ", Number, Name);
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Programming_70_483_Chapter_1
             foreach (Exercise exercise in exercises)
             {
                 Console.WriteLine(exercise.ToString());
-                exercise.Exec();
+                //exercise.Exec();
             }
         }
     }
