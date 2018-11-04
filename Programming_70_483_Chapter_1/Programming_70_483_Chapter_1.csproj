@@ -46,7 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ex001_Thread_Basic.cs" />
+    <Compile Include="Exercise classes\Common.cs" />
+    <Compile Include="Exercise classes\Ex001_Thread_Basic.cs" />
+    <Compile Include="Exercise classes\Ex002_Thread_Background.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
