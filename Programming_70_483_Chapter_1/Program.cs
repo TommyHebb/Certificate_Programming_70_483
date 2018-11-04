@@ -11,17 +11,16 @@ namespace Programming_70_483_Chapter_1
     {
         static void Main(string[] args)
         {
+            Exercise[] exercises = new Exercise[3];
+            exercises[0] = new Ex001_Thread_Basic();
+            exercises[1] = new Ex002_Thread_Background();
+            exercises[2] = new Ex003_Tasks_Basic();
 
-            Exercise ex001 = new Ex001_Thread_Basic();
-            Exercise ex002 = new Ex002_Thread_Background();
-            Exercise ex003 = new Ex003_Tasks_Basic();
-
-            Console.WriteLine(ex001.ToString());
-            ex001.Exec();
-            Console.WriteLine(ex002.ToString());
-            ex002.Exec();
-            Console.WriteLine(ex003.ToString());
-            ex003.Exec();
+            foreach (Exercise exercise in exercises)
+            {
+                Console.WriteLine(exercise.ToString());
+                exercise.Exec();
+            }
         }
     }
 }
