@@ -1,9 +1,5 @@
 ﻿using Programming_70_483_Chapter_1.Exercise_classes;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TommyTools;
 
 namespace Programming_70_483_Chapter_1
@@ -12,11 +8,12 @@ namespace Programming_70_483_Chapter_1
     {
         static void Main(string[] args)
         {
-            Exercise[] exercises = new Exercise[4];
+            Exercise[] exercises = new Exercise[5];
             exercises[0] = new Ex001_Thread_Basic();
             exercises[1] = new Ex002_Thread_Background();
             exercises[2] = new Ex003_Tasks_Basic();
             exercises[3] = new Ex004_Tasks_SharedVariableToStopAThread();
+            exercises[4] = new Ex005_Thread_UsingTheThreadStaticAttribute();
 
             foreach (Exercise exercise in exercises)
             {
