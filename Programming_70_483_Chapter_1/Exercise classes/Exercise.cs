@@ -13,5 +13,14 @@ namespace Programming_70_483_Chapter_1.Exercise_classes
         public abstract int Number { get; set; }
 
         public abstract void Exec();
+
+        public void NeedsExecution(int[] exercisesThatNeedExecution)
+        {
+            if (exercisesThatNeedExecution.Contains(this.Number))
+            {
+                Console.WriteLine("Executing exercise {0} ", this.Number);
+                this.Exec();
+            }
+        }
     }
 }

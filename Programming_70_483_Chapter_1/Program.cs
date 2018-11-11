@@ -39,14 +39,12 @@ namespace Programming_70_483_Chapter_1
             }
             while (isNumber);
 
-            // Louter ter controle...
             Console.WriteLine();
-            for (int index = 0; index < exercisesToRun.Length; index++)
-            {
-                Console.WriteLine("Running exercise {0} ... ", exercisesToRun[index]);
-            }
 
-            // Dan volgt een uitvoerder (+ UnitTests), die specificExercisesToRun binnenkrijgt als parameter en de nodige oefeningen uitvoert
+            foreach (Exercise exercise in exercises)
+            {
+                exercise.NeedsExecution(exercisesToRun);
+            }
         }
     }
 }
