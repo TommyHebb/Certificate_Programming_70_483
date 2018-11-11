@@ -20,13 +20,33 @@ namespace Programming_70_483_Chapter_1
             foreach (Exercise exercise in exercises)
             {
                 Console.WriteLine(exercise.ToString());
-                //exercise.Exec();
+            }
+            Console.WriteLine();
+
+            ConsoleTools consoleTools = new ConsoleTools();
+            int[] exercisesToRun = new int[0];
+            bool isNumber;
+
+            do
+            {
+                Console.WriteLine("Please enter the exercise you wish to run... (0 is not valid) ");
+                isNumber = int.TryParse(Console.ReadLine(), out int result);
+                if (isNumber && result != 0)
+                {
+                    exercisesToRun = consoleTools.AddExerciseNumberToGivenArrayAndGiveBackNewArray(result, exercisesToRun);
+                    Console.Write("Exercise {0} added to list. ", result);
+                }
+            }
+            while (isNumber);
+
+            // Louter ter controle...
+            Console.WriteLine();
+            for (int index = 0; index < exercisesToRun.Length; index++)
+            {
+                Console.WriteLine("Running exercise {0} ... ", exercisesToRun[index]);
             }
 
-            Console.WriteLine("Please enter the exercises you wish to run...");
-            int[] _specificExercisesToRun = ConsoleTools.GetSpecificExercisesToRun(); // Moet in eigen interface + UnitTests
-
-            // Dan volgt, op zelfde interface, een uitvoerder (+ UnitTests), die _specificExercisesToRun binnenkrijgt als parameter en de nodige oefeningen uitvoert
+            // Dan volgt een uitvoerder (+ UnitTests), die specificExercisesToRun binnenkrijgt als parameter en de nodige oefeningen uitvoert
         }
     }
 }
