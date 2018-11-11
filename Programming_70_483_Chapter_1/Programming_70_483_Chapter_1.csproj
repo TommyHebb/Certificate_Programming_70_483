@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ex003_Tasks_Basic.cs" />
+    <Compile Include="Ex004_Tasks_SharedVariableToStopAThread.cs" />
     <Compile Include="Exercise classes\Common.cs" />
     <Compile Include="Exercise classes\Ex001_Thread_Basic.cs" />
     <Compile Include="Exercise classes\Ex002_Thread_Background.cs" />

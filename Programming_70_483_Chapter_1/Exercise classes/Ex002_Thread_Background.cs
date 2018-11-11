@@ -1,5 +1,4 @@
 ﻿using Programming_70_483_Chapter_1.Exercise_classes;
-using System;
 using System.Threading;
 
 namespace Programming_70_483_Chapter_1
