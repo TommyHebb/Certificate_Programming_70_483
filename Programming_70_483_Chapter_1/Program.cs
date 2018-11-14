@@ -7,6 +7,10 @@ namespace Programming_70_483_Chapter_1
     {
         static void Main(string[] args)
         {
+            // TO DO: 
+            // BaseExercise afzonderen naar eigen project en namespace (eventueel in solution van DLL)
+            // Write'jes in DLL checken
+
             ConsoleTools consoleTools = new ConsoleTools();
             string nmspace = "Programming_70_483_Chapter_1";
             string startsWith = "Ex";
