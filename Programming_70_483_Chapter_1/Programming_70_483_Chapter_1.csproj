@@ -42,13 +42,13 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="TommyTools">
-      <HintPath>..\..\TommyTools\TommyTools\obj\Debug\TommyTools.dll</HintPath>
+      <HintPath>..\..\..\..\Documents\Visual Studio 2017\Projects\TommyTools\TommyTools\bin\Debug\TommyTools.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ex003_Tasks_Basic.cs" />
-    <Compile Include="Ex004_Tasks_SharedVariableToStopAThread.cs" />
-    <Compile Include="Ex005_Thread_UsingTheThreadStaticAttribute.cs" />
+    <Compile Include="Exercise classes\Ex003_Tasks_Basic.cs" />
+    <Compile Include="Exercise classes\Ex004_Tasks_SharedVariableToStopAThread.cs" />
+    <Compile Include="Exercise classes\Ex005_Thread_UsingTheThreadStaticAttribute.cs" />
     <Compile Include="Exercise classes\Common.cs" />
     <Compile Include="Exercise classes\Ex001_Thread_Basic.cs" />
     <Compile Include="Exercise classes\Ex002_Thread_Background.cs" />
