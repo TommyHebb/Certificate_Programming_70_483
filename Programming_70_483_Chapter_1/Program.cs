@@ -9,26 +9,31 @@ namespace Programming_70_483_Chapter_1
     {
         static void Main(string[] args)
         {
-            string nspace = "Programming_70_483_Chapter_1";
+            ConsoleTools consoleTools = new ConsoleTools();
+            string nmspace = "Programming_70_483_Chapter_1";
+            string startsWith = "Ex0";
+
+            Exercise[] exercises = consoleTools.GetObjectArrayOfClasses(nmspace, startsWith) as Exercise[];
+            /*
             var exercisesArray = from target in Assembly.GetExecutingAssembly().GetTypes()
-                                 where target.IsClass && target.Namespace == nspace && target.Name.StartsWith("Ex0")
+                                 where target.IsClass && target.Namespace == nmspace && target.Name.StartsWith("Ex0")
                                  orderby target.Name
                                  select target;
             exercisesArray.ToArray();
 
             Exercise[] exercises = new Exercise[exercisesArray.Count()];
+            Exercise myExercise;
             int index = 0;
 
             foreach (var clss in exercisesArray)
             {
-                exercises[index] = Activator.CreateInstance(clss) as Exercise;
-                Console.WriteLine(exercises[index].ToString());
+                myExercise = Activator.CreateInstance(clss) as Exercise;
+                exercises[index] = myExercise;
                 index++;
+                Console.WriteLine(myExercise.ToString());
             }
             Console.WriteLine();
-
-
-            ConsoleTools consoleTools = new ConsoleTools();
+            */
             int[] exercisesToRun = new int[0];
             bool isNumber;
 
@@ -43,7 +48,6 @@ namespace Programming_70_483_Chapter_1
                 }
             }
             while (isNumber);
-
             Console.WriteLine();
             
             foreach (Exercise exercise in exercises)

@@ -41,8 +41,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="TommyTools">
-      <HintPath>..\..\..\..\Documents\Visual Studio 2017\Projects\TommyTools\TommyTools\bin\Debug\TommyTools.dll</HintPath>
+    <Reference Include="TommyTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TommyTools\TommyTools\bin\Debug\TommyTools.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
