@@ -11,9 +11,10 @@ namespace Programming_70_483_Chapter_1
         {
             ConsoleTools consoleTools = new ConsoleTools();
             string nmspace = "Programming_70_483_Chapter_1";
-            string startsWith = "Ex0";
+            string startsWith = "Ex";
 
-            Exercise[] exercises = consoleTools.GetObjectArrayOfClasses(nmspace, startsWith) as Exercise[];
+            BaseExercise[] exercises = new BaseExercise[0];
+            exercises = consoleTools.GetObjectArrayOfClasses(nmspace, startsWith) as BaseExercise[];
             /*
             var exercisesArray = from target in Assembly.GetExecutingAssembly().GetTypes()
                                  where target.IsClass && target.Namespace == nmspace && target.Name.StartsWith("Ex0")
@@ -21,13 +22,13 @@ namespace Programming_70_483_Chapter_1
                                  select target;
             exercisesArray.ToArray();
 
-            Exercise[] exercises = new Exercise[exercisesArray.Count()];
-            Exercise myExercise;
+            BaseExercise[] exercises = new BaseExercise[exercisesArray.Count()];
+            BaseExercise myExercise;
             int index = 0;
 
             foreach (var clss in exercisesArray)
             {
-                myExercise = Activator.CreateInstance(clss) as Exercise;
+                myExercise = Activator.CreateInstance(clss) as BaseExercise;
                 exercises[index] = myExercise;
                 index++;
                 Console.WriteLine(myExercise.ToString());
@@ -44,15 +45,22 @@ namespace Programming_70_483_Chapter_1
                 if (isNumber && result != 0)
                 {
                     exercisesToRun = consoleTools.AddExerciseNumberToGivenArrayAndGiveBackNewArray(result, exercisesToRun);
-                    Console.Write("Exercise {0} added to list. ", result);
+                    Console.Write("BaseExercise {0} added to list. ", result);
                 }
             }
             while (isNumber);
             Console.WriteLine();
-            
-            foreach (Exercise exercise in exercises)
+
+            try
             {
-                exercise.NeedsExecution(exercisesToRun);
+                foreach (BaseExercise exercise in exercises)
+                {
+                    exercise.NeedsExecution(exercisesToRun);
+                }
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine("Oeps... {0}", e.ToString());
             }
         }
     }

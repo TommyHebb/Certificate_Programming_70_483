@@ -2,7 +2,7 @@
 
 namespace Programming_70_483_Chapter_1
 {
-    public class Ex002_Thread_Background : Exercise
+    public class Ex002_Thread_Background : BaseExercise
     {
         public override string Name { get; set; } = "Thread - Background";
 

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Programming_70_483_Chapter_1
 {
-    public abstract class Exercise
+    public abstract class BaseExercise
     {
         public abstract string Name { get; set; }
 

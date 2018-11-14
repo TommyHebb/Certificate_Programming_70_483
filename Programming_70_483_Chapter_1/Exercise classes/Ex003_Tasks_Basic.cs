@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Programming_70_483_Chapter_1
 {
-    public class Ex003_Tasks_Basic : Exercise
+    public class Ex003_Tasks_Basic : BaseExercise
     {
         public override string Name { get; set; } = "Tasks - Basic";
 

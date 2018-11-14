@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace Programming_70_483_Chapter_1
 {
-    class Ex005_Thread_UsingTheThreadStaticAttribute : Exercise
+    class Ex005_Thread_UsingTheThreadStaticAttribute : BaseExercise
     {
         [ThreadStatic]
         public static int _field01;

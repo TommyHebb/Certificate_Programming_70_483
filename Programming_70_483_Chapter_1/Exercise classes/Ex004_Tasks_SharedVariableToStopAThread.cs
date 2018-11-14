@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace Programming_70_483_Chapter_1
 {
-    class Ex004_Tasks_SharedVariableToStopAThread : Exercise
+    class Ex004_Tasks_SharedVariableToStopAThread : BaseExercise
     {
         public override string Name { get; set; } = "Tasks - Shared variable to stop a thread";
 

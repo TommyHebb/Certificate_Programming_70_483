@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace Programming_70_483_Chapter_1
 {
-    public class Ex001_Thread_Basic : Exercise
+    public class Ex001_Thread_Basic : BaseExercise
     {
         public override string Name { get; set; } = "Thread - Basic";
 
