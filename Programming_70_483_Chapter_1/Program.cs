@@ -1,5 +1,6 @@
-﻿using Programming_70_483_Chapter_1.Exercise_classes;
-using System;
+﻿using System;
+using System.Linq;
+using System.Reflection;
 using TommyTools;
 
 namespace Programming_70_483_Chapter_1
@@ -8,18 +9,24 @@ namespace Programming_70_483_Chapter_1
     {
         static void Main(string[] args)
         {
-            Exercise[] exercises = new Exercise[5];
-            exercises[0] = new Ex001_Thread_Basic();
-            exercises[1] = new Ex002_Thread_Background();
-            exercises[2] = new Ex003_Tasks_Basic();
-            exercises[3] = new Ex004_Tasks_SharedVariableToStopAThread();
-            exercises[4] = new Ex005_Thread_UsingTheThreadStaticAttribute();
+            string nspace = "Programming_70_483_Chapter_1";
+            var exercisesArray = from target in Assembly.GetExecutingAssembly().GetTypes()
+                                 where target.IsClass && target.Namespace == nspace && target.Name.StartsWith("Ex0")
+                                 orderby target.Name
+                                 select target;
+            exercisesArray.ToArray();
 
-            foreach (Exercise exercise in exercises)
+            Exercise[] exercises = new Exercise[exercisesArray.Count()];
+            int index = 0;
+
+            foreach (var clss in exercisesArray)
             {
-                Console.WriteLine(exercise.ToString());
+                exercises[index] = Activator.CreateInstance(clss) as Exercise;
+                Console.WriteLine(exercises[index].ToString());
+                index++;
             }
             Console.WriteLine();
+
 
             ConsoleTools consoleTools = new ConsoleTools();
             int[] exercisesToRun = new int[0];
@@ -38,7 +45,7 @@ namespace Programming_70_483_Chapter_1
             while (isNumber);
 
             Console.WriteLine();
-
+            
             foreach (Exercise exercise in exercises)
             {
                 exercise.NeedsExecution(exercisesToRun);

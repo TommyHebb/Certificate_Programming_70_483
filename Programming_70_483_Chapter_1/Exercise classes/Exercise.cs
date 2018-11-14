@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Programming_70_483_Chapter_1.Exercise_classes
+namespace Programming_70_483_Chapter_1
 {
     public abstract class Exercise
     {
