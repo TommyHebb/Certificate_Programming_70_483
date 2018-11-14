@@ -14,9 +14,9 @@ namespace Programming_70_483_Chapter_1.Exercise_classes
 
         public abstract void Exec();
 
-        public void NeedsExecution(int[] exercisesThatNeedExecution)
+        public void NeedsExecution(int[] exerciseNumbersThatNeedExecution)
         {
-            if (exercisesThatNeedExecution.Contains(this.Number))
+            if (exerciseNumbersThatNeedExecution.Contains(this.Number))
             {
                 Console.WriteLine("Executing exercise {0} ", this.Number);
                 this.Exec();
