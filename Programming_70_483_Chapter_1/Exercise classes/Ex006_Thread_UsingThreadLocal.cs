@@ -11,28 +11,28 @@ namespace Programming_70_483_Chapter_1
 
         public Ex006_Thread_UsingThreadLocal() { }
 
-    public override void Exec()
-    {
-        new Thread(() =>
+        public override void Exec()
         {
-            for (int x = 0; x < Common._field02.Value; x++)
+            new Thread(() =>
             {
-                Console.WriteLine("Thread A: {0}", x);
-            }
-        }).Start();
+                for (int x = 0; x < Common._field02.Value; x++)
+                {
+                    Console.WriteLine("Thread A: {0}", x);
+                }
+            }).Start();
 
-        new Thread(() =>
-        {
-            for (int x = 0; x < Common._field02.Value; x++)
+            new Thread(() =>
             {
-                Console.WriteLine("Thread B: {0}", x);
-            }
-        }).Start();
+                for (int x = 0; x < Common._field02.Value; x++)
+                {
+                    Console.WriteLine("Thread B: {0}", x);
+                }
+            }).Start();
         }
 
-    public override string ToString()
-    {
-        return string.Format("Oefening: {0} - {1} ", Number, Name);
+        public override string ToString()
+        {
+            return string.Format("Oefening: {0} - {1} ", Number, Name);
+        }
     }
-}
 }
