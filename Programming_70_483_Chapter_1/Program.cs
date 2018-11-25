@@ -29,12 +29,12 @@ namespace Programming_70_483_Chapter_1
             bool isNumber;
             do
             {
-                Console.WriteLine("Please enter the exercise you wish to run... (0 is not valid) ");
+                Console.WriteLine("Please enter the exercise number you wish to run... (0 is not valid. Entering nothing quits the input) ");
                 isNumber = int.TryParse(Console.ReadLine(), out int result);
                 if (isNumber && result != 0)
                 {
                     exercisesToRun = consoleTools.AddExerciseNumberToGivenArrayAndGiveBackNewArray(result, exercisesToRun);
-                    Console.Write("BaseExercise {0} added to list. ", result);
+                    Console.Write("Exercise {0} added to list. ", result);
                 }
             }
             while (isNumber);
