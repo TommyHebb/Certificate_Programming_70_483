@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using TommyTools;
 
 namespace Programming_70_483_Chapter_1
 {
@@ -15,7 +16,9 @@ namespace Programming_70_483_Chapter_1
         {
             if (exerciseNumbersThatNeedExecution.Contains(this.Number))
             {
-                Console.WriteLine("Executing exercise {0} ", this.Number);
+                ConsoleTools.Devider();
+                Console.WriteLine("Executing exercise {0}... ", this.Number);
+                ConsoleTools.Devider('-', 25);
                 this.Exec();
             }
         }

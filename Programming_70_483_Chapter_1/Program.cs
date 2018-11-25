@@ -37,7 +37,7 @@ namespace Programming_70_483_Chapter_1
                 }
             }
             while (isNumber);
-            Console.WriteLine();
+            Console.WriteLine("Executing requested exercises.....");
 
             foreach (BaseExercise exercise in exercises)
             {
