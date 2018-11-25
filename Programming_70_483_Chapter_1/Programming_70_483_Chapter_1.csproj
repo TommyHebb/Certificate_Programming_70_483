@@ -64,6 +64,7 @@
     <Compile Include="Exercise classes\Ex012_Tasks_AttachingChildTasksToAParentTask.cs" />
     <Compile Include="Exercise classes\Ex013_Tasks_UsingATaskFactory.cs" />
     <Compile Include="Exercise classes\Ex014_Tasks_UsingTaskWaitAll.cs" />
+    <Compile Include="Exercise classes\Ex015_Tasks_UsingTaskWaitAny.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
