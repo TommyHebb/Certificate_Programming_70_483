@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -25,5 +26,14 @@ namespace Programming_70_483_Chapter_1
         {
             return Thread.CurrentThread.ManagedThreadId; // Used by: Ex006_Thread_UsingThreadLocal
         });
+
+        public static async Task<string> DownloadContent()
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                string result = await client.GetStringAsync("http://www.microsoft.com"); // Used by: Ex018_AsyncAndAwait_SimpleExample
+                return result;
+            }
+        }
     }
 }
