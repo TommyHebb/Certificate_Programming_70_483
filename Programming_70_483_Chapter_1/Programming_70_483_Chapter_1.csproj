@@ -60,6 +60,7 @@
     <Compile Include="Exercise classes\Ex009_Tasks_IfATaskShouldReturnAValue.cs" />
     <Compile Include="Exercise classes\Ex010_Tasks_AddAContinuationTask.cs" />
     <Compile Include="Exercise classes\Ex011_Tasks_SchedulingDifferentContinuationTasks.cs" />
+    <Compile Include="Exercise classes\Ex012_Tasks_AttachingChildTasksToAParentTask.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
