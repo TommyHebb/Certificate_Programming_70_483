@@ -69,6 +69,7 @@
     <Compile Include="Exercise classes\Ex017_Parallel_UsingParallelBreak.cs" />
     <Compile Include="Exercise classes\Ex018_AsyncAndAwait_SimpleExample.cs" />
     <Compile Include="Exercise classes\Ex019_AsyncAndAwait_PLINQ_UsingAsParallel.cs" />
+    <Compile Include="Exercise classes\Ex020_AsyncAndAwait_PLINQ_UnorderedParallelQuery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
