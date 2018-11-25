@@ -9,7 +9,6 @@ namespace Programming_70_483_Chapter_1
         {
             // TO DO: 
             // BaseExercise afzonderen naar eigen project en namespace (eventueel in solution van DLL)
-            // Write'jes in DLL checken
 
             Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
             ConsoleTools consoleTools = new ConsoleTools();
