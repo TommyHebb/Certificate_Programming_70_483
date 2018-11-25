@@ -66,6 +66,7 @@
     <Compile Include="Exercise classes\Ex014_Tasks_UsingTaskWaitAll.cs" />
     <Compile Include="Exercise classes\Ex015_Tasks_UsingTaskWaitAny.cs" />
     <Compile Include="Exercise classes\Ex016_Parallel_UsingParallelForAndParallelForeach.cs" />
+    <Compile Include="Exercise classes\Ex017_Parallel_UsingParallelBreak.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
