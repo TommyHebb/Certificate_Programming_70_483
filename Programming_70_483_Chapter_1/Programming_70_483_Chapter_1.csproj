@@ -57,6 +57,7 @@
     <Compile Include="Exercise classes\Ex006_Thread_UsingThreadLocal.cs" />
     <Compile Include="Exercise classes\Ex007_Thread_QueuingSomeWorkToTheThreadPool.cs" />
     <Compile Include="Exercise classes\Ex008_Tasks_HowToStartANewTaskAndWaitUntilItsFinished.cs" />
+    <Compile Include="Exercise classes\Ex009_Tasks_IfATaskShouldReturnAValue.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
