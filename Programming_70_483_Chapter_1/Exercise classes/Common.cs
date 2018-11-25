@@ -15,10 +15,15 @@ namespace Programming_70_483_Chapter_1
             ConsoleTools.Devider('-');
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("ThreadProc: {0}", i);
+                Console.WriteLine("ThreadProc: {0}", i); // Used by: Ex001_Thread_Basic AND Ex002_Thread_Background
                 Thread.Sleep((int)o);
             }
             ConsoleTools.Devider('-');
         }
+
+        public static ThreadLocal<int> _field02 = new ThreadLocal<int>(() =>
+        {
+            return Thread.CurrentThread.ManagedThreadId; // Used by: Ex006_Thread_UsingThreadLocal
+        });
     }
 }
