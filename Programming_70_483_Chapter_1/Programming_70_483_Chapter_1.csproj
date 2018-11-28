@@ -71,6 +71,8 @@
     <Compile Include="Exercise classes\Ex020_AsyncAndAwait_PLINQ_UnorderedParallelQuery.cs" />
     <Compile Include="Exercise classes\Ex021_AsyncAndAwait_PLINQ_OrderedParallelQuery.cs" />
     <Compile Include="Exercise classes\Ex022_AsyncAndAwait_PLINQ_MakingAParallelQuerySequential.cs" />
+    <Compile Include="Exercise classes\Ex023_AsyncAndAwait_PLINQ_UsingForAll.cs" />
+    <Compile Include="Exercise classes\Ex024_AsyncAndAwait_PLINQ_CatchingAggregateException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

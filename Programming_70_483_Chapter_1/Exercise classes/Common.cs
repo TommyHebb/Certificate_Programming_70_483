@@ -35,5 +35,14 @@ namespace Programming_70_483_Chapter_1
                 return result;
             }
         }
+
+        public static bool IsEven(int i)
+        {
+            if (i % 10 == 0)
+            {
+                throw new ArgumentException("i"); // Used by: Ex024_AsyncAndAwait_PLINQ_CatchingAggregateException
+            }
+            return i % 2 == 0;
+        }
     }
 }
