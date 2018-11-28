@@ -77,6 +77,7 @@
     <Compile Include="Exercise classes\Ex026_ConcurrentCollections_UsingGetConsumingEnumerableOnABlockingCollection.cs" />
     <Compile Include="Exercise classes\Ex027_ConcurrentCollections_UsingAConcurrentBag.cs" />
     <Compile Include="Exercise classes\Ex028_ConcurrentCollections_EnumeratingAConcurrentBag.cs" />
+    <Compile Include="Exercise classes\Ex029_ConcurrentCollections_UsingAConcurrentStack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

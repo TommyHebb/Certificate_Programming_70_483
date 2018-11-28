@@ -23,6 +23,16 @@ namespace Programming_70_483_Chapter_1
                     Console.WriteLine(v);
                 }
             });
+            Task write = Task.Run(() =>
+            {
+                while (true)
+                {
+                    string s = Console.ReadLine();
+                    if (string.IsNullOrWhiteSpace(s)) break;
+                    col.Add(s);
+                }
+            });
+            write.Wait();
         }
     }
 }
