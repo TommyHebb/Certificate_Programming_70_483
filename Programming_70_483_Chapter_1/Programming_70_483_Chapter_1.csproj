@@ -73,6 +73,8 @@
     <Compile Include="Exercise classes\Ex022_AsyncAndAwait_PLINQ_MakingAParallelQuerySequential.cs" />
     <Compile Include="Exercise classes\Ex023_AsyncAndAwait_PLINQ_UsingForAll.cs" />
     <Compile Include="Exercise classes\Ex024_AsyncAndAwait_PLINQ_CatchingAggregateException.cs" />
+    <Compile Include="Exercise classes\Ex025_ConcurrentCollections_UsingBlockingCollection.cs" />
+    <Compile Include="Exercise classes\Ex026_ConcurrentCollections_UsingGetConsumingEnumerableOnABlockingCollection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
