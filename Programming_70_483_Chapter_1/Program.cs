@@ -10,12 +10,15 @@ namespace Programming_70_483_Chapter_1
             // TO DO: 
             // BaseExercise afzonderen naar eigen project en namespace (eventueel in solution van DLL)
 
-            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+            Console.SetWindowSize(Console.LargestWindowWidth / 3 * 2, Console.LargestWindowHeight / 3 * 2);
+
             ConsoleTools consoleTools = new ConsoleTools();
+            ArrayTools arrayTools = new ArrayTools();
+
             string nmspace = "Programming_70_483_Chapter_1";
             string startsWith = "Ex";
 
-            var classes = consoleTools.GetObjectArrayOfClasses(nmspace, startsWith);
+            var classes = arrayTools.GetObjectArrayOfClasses(nmspace, startsWith);
             BaseExercise[] exercises = new BaseExercise[classes.Length];
             int index = 0;
             foreach (var clss in classes)
@@ -32,7 +35,7 @@ namespace Programming_70_483_Chapter_1
                 isNumber = int.TryParse(Console.ReadLine(), out int result);
                 if (isNumber && result != 0)
                 {
-                    exercisesToRun = consoleTools.AddExerciseNumberToGivenArrayAndGiveBackNewArray(result, exercisesToRun);
+                    exercisesToRun = arrayTools.AddExerciseNumberToGivenArrayAndGiveBackNewArray(result, exercisesToRun);
                     Console.Write("Exercise {0} added to list. ", result);
                 }
             }
