@@ -75,6 +75,8 @@
     <Compile Include="Exercise classes\Ex024_AsyncAndAwait_PLINQ_CatchingAggregateException.cs" />
     <Compile Include="Exercise classes\Ex025_ConcurrentCollections_UsingBlockingCollection.cs" />
     <Compile Include="Exercise classes\Ex026_ConcurrentCollections_UsingGetConsumingEnumerableOnABlockingCollection.cs" />
+    <Compile Include="Exercise classes\Ex027_ConcurrentCollections_UsingAConcurrentBag.cs" />
+    <Compile Include="Exercise classes\Ex028_ConcurrentCollections_EnumeratingAConcurrentBag.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
