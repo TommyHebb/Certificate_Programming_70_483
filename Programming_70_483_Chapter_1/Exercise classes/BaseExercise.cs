@@ -14,7 +14,7 @@ namespace Programming_70_483_Chapter_1
 
         public void NeedsExecution(int[] exerciseNumbersThatNeedExecution)
         {
-            if (exerciseNumbersThatNeedExecution.Contains(this.Number))
+            if (exerciseNumbersThatNeedExecution.Contains(Number))
             {
                 ConsoleTools.Devider();
                 Console.WriteLine("Executing exercise {0}... ", Number);
