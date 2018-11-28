@@ -8,40 +8,40 @@ namespace Programming_70_483_Chapter_1
         static void Main(string[] args)
         {
             Console.SetWindowSize(Console.LargestWindowWidth / 3 * 2, Console.LargestWindowHeight / 3 * 2);
+            ArrayTools _arrayTools = new ArrayTools();
 
-            ConsoleTools consoleTools = new ConsoleTools();
-            ArrayTools arrayTools = new ArrayTools();
-
-            string nmspace = "Programming_70_483_Chapter_1";
-            string startsWith = "Ex";
-
-            var classes = arrayTools.GetObjectArrayOfClasses(nmspace, startsWith);
-            BaseExercise[] exercises = new BaseExercise[classes.Length];
-            int index = 0;
-            foreach (var clss in classes)
+            // Acquire array of Exercise(s) by system (Array: _exercises)
+            string _nmspace = "Programming_70_483_Chapter_1";
+            string _startsWith = "Ex";
+            var _classes = _arrayTools.GetObjectArrayOfClasses(_nmspace, _startsWith);
+            BaseExercise[] _exercises = new BaseExercise[_classes.Length];
+            int _index = 0;
+            foreach (var _clss in _classes)
             {                
-                exercises[index] = clss as BaseExercise;
-                index++;
+                _exercises[_index] = _clss as BaseExercise;
+                _index++;
             }
 
-            int[] exercisesToRun = new int[0];
-            bool isNumber;
+            // Acquire array of exercise(s) to run (by number) through user input (Array: _exercisesToRun)
+            int[] _exercisesToRun = new int[0];
+            bool _isNumber;
             do
             {
-                Console.WriteLine("Please enter the exercise number you wish to run... (0 is not valid. Entering nothing quits the input) ");
-                isNumber = int.TryParse(Console.ReadLine(), out int result);
-                if (isNumber && result != 0)
+                Console.WriteLine("Please enter the _exercise number you wish to run... (0 is not valid. Entering nothing quits the input) ");
+                _isNumber = int.TryParse(Console.ReadLine(), out int _result);
+                if (_isNumber && _result != 0)
                 {
-                    exercisesToRun = arrayTools.AddExerciseNumberToGivenArrayAndGiveBackNewArray(result, exercisesToRun);
-                    Console.Write("Exercise {0} added to list. ", result);
+                    _exercisesToRun = _arrayTools.AddExerciseNumberToGivenArrayAndGiveBackNewArray(_result, _exercisesToRun);
+                    Console.Write("Exercise {0} added to list. ", _result);
                 }
             }
-            while (isNumber);
-            Console.WriteLine("Executing requested exercises.....");
+            while (_isNumber);
 
-            foreach (BaseExercise exercise in exercises)
+            // Execute exercise(s) cross referencing arrays _exercises and _exercisesToRun
+            Console.WriteLine("Executing requested _exercises.....");
+            foreach (BaseExercise _exercise in _exercises)
             {
-                exercise.NeedsExecution(exercisesToRun);
+                _exercise.NeedsExecution(_exercisesToRun);
             }
         }
     }
