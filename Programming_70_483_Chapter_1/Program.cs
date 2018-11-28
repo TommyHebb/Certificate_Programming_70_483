@@ -10,19 +10,21 @@ namespace Programming_70_483_Chapter_1
         {
             Console.SetWindowSize(Console.LargestWindowWidth / 3 * 2, Console.LargestWindowHeight / 3 * 2);
             ArrayTools _arrayTools = new ArrayTools();
-            int[] _possibleExerciseNumbers;
 
             // Acquire array of Exercise(s) by system (Array: _exercises)
             string _nmspace = "Programming_70_483_Chapter_1";
             string _startsWith = "Ex";
             var _classes = _arrayTools.GetObjectArrayOfClasses(_nmspace, _startsWith);
-            BaseExercise[] _exercises = new BaseExercise[_classes.Length];
-            _possibleExerciseNumbers = new int[_classes.Length];
+            int _numberOfExercises = _classes.Length;
+            int[] _possibleExerciseNumbers = new int[_numberOfExercises];
+            BaseExercise[] _exercises = new BaseExercise[_numberOfExercises];
+            BaseExercise _baseExercise;
             int _index = 0;
             foreach (var _clss in _classes)
-            {                
-                _exercises[_index] = _clss as BaseExercise;
-                _possibleExerciseNumbers[_index] = _exercises[_index].GetNumber();
+            {
+                _baseExercise = _clss as BaseExercise;
+                _exercises[_index] = _baseExercise;
+                _possibleExerciseNumbers[_index] = _baseExercise.GetNumber();
                 _index++;
             }
 
