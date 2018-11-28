@@ -11,6 +11,11 @@ namespace Programming_70_483_Chapter_1
 {
     public class Common
     {
+        public static ThreadLocal<int> _field02 = new ThreadLocal<int>(() =>
+        {
+            return Thread.CurrentThread.ManagedThreadId; // Used by: Ex006_Thread_UsingThreadLocal
+        });
+
         public static void ThreadMethod(object o)
         {
             ConsoleTools.Devider('-');
@@ -21,11 +26,6 @@ namespace Programming_70_483_Chapter_1
             }
             ConsoleTools.Devider('-');
         }
-
-        public static ThreadLocal<int> _field02 = new ThreadLocal<int>(() =>
-        {
-            return Thread.CurrentThread.ManagedThreadId; // Used by: Ex006_Thread_UsingThreadLocal
-        });
 
         public static async Task<string> DownloadContent()
         {
