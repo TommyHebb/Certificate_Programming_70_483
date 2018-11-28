@@ -21,10 +21,5 @@ namespace Programming_70_483_Chapter_1
             var numbers = Enumerable.Range(0, 10);
             Parallel.ForEach(numbers, i => { Thread.Sleep(1000); });
         }
-
-        public override string ToString()
-        {
-            return string.Format("Oefening: {0} - {1} ", Number, Name);
-        }
     }
 }

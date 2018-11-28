@@ -19,10 +19,5 @@ namespace Programming_70_483_Chapter_1
             // otherwise, the output will get written anyway.
             t.Start(100);
         }
-
-        public override string ToString()
-        {
-            return string.Format("Oefening: {0} - {1} ", Number, Name);
-        }
     }
 }

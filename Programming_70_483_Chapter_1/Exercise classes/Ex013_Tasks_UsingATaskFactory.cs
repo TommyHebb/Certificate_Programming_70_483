@@ -30,10 +30,5 @@ namespace Programming_70_483_Chapter_1
             });
             finalTask.Wait();
         }
-
-        public override string ToString()
-        {
-            return string.Format("Oefening: {0} - {1} ", Number, Name);
-        }
     }
 }

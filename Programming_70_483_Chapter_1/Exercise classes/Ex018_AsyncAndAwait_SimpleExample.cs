@@ -17,10 +17,5 @@ namespace Programming_70_483_Chapter_1
             string result = Common.DownloadContent().Result;
             Console.WriteLine(result);
         }
-
-        public override string ToString()
-        {
-            return string.Format("Oefening: {0} - {1} ", Number, Name);
-        }
     }
 }

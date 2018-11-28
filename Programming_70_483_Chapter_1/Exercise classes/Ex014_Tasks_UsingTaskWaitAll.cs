@@ -21,10 +21,5 @@ namespace Programming_70_483_Chapter_1
             tasks[2] = Task.Run(() => { Thread.Sleep(1000); Console.WriteLine("3"); return 3; });
             Task.WaitAll(tasks);
         }
-
-        public override string ToString()
-        {
-            return string.Format("Oefening: {0} - {1} ", Number, Name);
-        }
     }
 }

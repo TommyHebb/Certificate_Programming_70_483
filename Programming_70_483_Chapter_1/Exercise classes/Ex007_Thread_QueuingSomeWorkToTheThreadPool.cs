@@ -19,10 +19,5 @@ namespace Programming_70_483_Chapter_1
                 Console.WriteLine("Working on a thread from threadpool");
             });
         }
-
-        public override string ToString()
-        {
-            return string.Format("Oefening: {0} - {1} ", Number, Name);
-        }
     }
 }
