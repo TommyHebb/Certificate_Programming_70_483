@@ -27,7 +27,7 @@ namespace Programming_70_483_Chapter_1
             bool _isNumber;
             do
             {
-                Console.WriteLine("Please enter the exercise number you wish to run... (0 is not valid. Entering nothing quits the input) ");
+                Console.WriteLine("Please enter the exercise number you wish to run... (0 is not valid. Entering nothing quits input) ");
                 _isNumber = int.TryParse(Console.ReadLine(), out int _result);
                 if (_isNumber && _result != 0)
                 {
@@ -40,7 +40,7 @@ namespace Programming_70_483_Chapter_1
             // Execute exercise(s) cross referencing arrays _exercises and _exercisesToRun
             if (_exercisesToRun.Length > 0)
             {
-                Console.WriteLine("Executing requested exercises.....");
+                Console.WriteLine("Executing requested exercises..... ");
                 foreach (BaseExercise _exercise in _exercises)
                 {
                     _exercise.NeedsExecution(_exercisesToRun);
@@ -48,7 +48,7 @@ namespace Programming_70_483_Chapter_1
             }
             else
             {
-                Console.WriteLine("No exercises provided. Program will terminate...");
+                Console.WriteLine("No exercises provided. Program will terminate... ");
             }
         }
     }
