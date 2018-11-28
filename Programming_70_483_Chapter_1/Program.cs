@@ -7,9 +7,6 @@ namespace Programming_70_483_Chapter_1
     {
         static void Main(string[] args)
         {
-            // TO DO: 
-            // BaseExercise afzonderen naar eigen project en namespace (eventueel in solution van DLL)
-
             Console.SetWindowSize(Console.LargestWindowWidth / 3 * 2, Console.LargestWindowHeight / 3 * 2);
 
             ConsoleTools consoleTools = new ConsoleTools();

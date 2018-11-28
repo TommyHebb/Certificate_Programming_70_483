@@ -54,7 +54,6 @@
     <Compile Include="Exercise classes\Common.cs" />
     <Compile Include="Exercise classes\Ex001_Thread_Basic.cs" />
     <Compile Include="Exercise classes\Ex002_Thread_Background.cs" />
-    <Compile Include="Exercise classes\BaseExercise.cs" />
     <Compile Include="Exercise classes\Ex006_Thread_UsingThreadLocal.cs" />
     <Compile Include="Exercise classes\Ex007_Thread_QueuingSomeWorkToTheThreadPool.cs" />
     <Compile Include="Exercise classes\Ex008_Tasks_HowToStartANewTaskAndWaitUntilItsFinished.cs" />
