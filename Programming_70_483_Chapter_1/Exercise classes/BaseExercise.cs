@@ -17,9 +17,9 @@ namespace Programming_70_483_Chapter_1
             if (exerciseNumbersThatNeedExecution.Contains(this.Number))
             {
                 ConsoleTools.Devider();
-                Console.WriteLine("Executing exercise {0}... ", this.Number);
+                Console.WriteLine("Executing exercise {0}... ", Number);
                 ConsoleTools.Devider('-', 25);
-                this.Exec();
+                Exec();
             }
         }
     }
