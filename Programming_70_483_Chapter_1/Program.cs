@@ -11,25 +11,21 @@ namespace Programming_70_483_Chapter_1
             Console.SetWindowSize(Console.LargestWindowWidth / 3 * 2, Console.LargestWindowHeight / 3 * 2);
             ArrayTools _arrayTools = new ArrayTools();
 
-            // Present choice of Objective
+            // Present choice of Objective for this Chapter
             bool _isObjectiveNumber;
             string _objectiveName = "";
-            int _numberOfObjectives = 5;
-            string[] _objectives = new string[_numberOfObjectives];
-            _objectives[0] = "ExerciseClassesObjective1_1";
-            _objectives[1] = "ExerciseClassesObjective1_2";
-            _objectives[2] = "ExerciseClassesObjective1_3";
-            _objectives[3] = "ExerciseClassesObjective1_4";
-            _objectives[4] = "ExerciseClassesObjective1_5";
-            foreach (string _objective in _objectives)
+            int _numberOfObjectivesInChapter = 5;
+            string[] _objectives = new string[_numberOfObjectivesInChapter];
+            for (int index = 0; index < _numberOfObjectivesInChapter; index++)
             {
-                Console.WriteLine(_objective);
+                _objectives[index] = "ExerciseClassesObjective1_" + (index + 1);
+                Console.WriteLine(_objectives[index]);
             }
             do
             {
                 Console.WriteLine("Please enter the number of the objective of which you wish to run exercises... (Entering nothing quits input) ");
                 _isObjectiveNumber = int.TryParse(Console.ReadLine(), out int _objectiveNumber);
-                if (_isObjectiveNumber && _objectiveNumber > 0 && _objectiveNumber <= _numberOfObjectives)
+                if (_isObjectiveNumber && _objectiveNumber > 0 && _objectiveNumber <= _numberOfObjectivesInChapter)
                 {
                     _objectiveName = _objectives[_objectiveNumber - 1];
                     Console.WriteLine("The exercises contained in objective {0} are as follows... ", _objectiveNumber);
