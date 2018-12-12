@@ -47,7 +47,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercise classes\Ex000_ExerciseClassFormat.cs" />
+    <Compile Include="Ex000_ExerciseClassFormat.cs" />
     <Compile Include="Exercise classes\Ex003_Tasks_Basic.cs" />
     <Compile Include="Exercise classes\Ex004_Tasks_SharedVariableToStopAThread.cs" />
     <Compile Include="Exercise classes\Ex005_Thread_UsingTheThreadStaticAttribute.cs" />
@@ -78,6 +78,8 @@
     <Compile Include="Exercise classes\Ex027_ConcurrentCollections_UsingAConcurrentBag.cs" />
     <Compile Include="Exercise classes\Ex028_ConcurrentCollections_EnumeratingAConcurrentBag.cs" />
     <Compile Include="Exercise classes\Ex029_ConcurrentCollections_UsingAConcurrentStack.cs" />
+    <Compile Include="Exercise classes\Ex030_ConcurrentCollections_UsingAConcurrentQueue.cs" />
+    <Compile Include="Exercise classes\Ex031_ConcurrentCollections_UsingAConcurrentDictionary.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

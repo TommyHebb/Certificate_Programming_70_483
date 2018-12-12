@@ -19,14 +19,3 @@ namespace Programming_70_483_Chapter_1
     }
 }
 */
-
-
-
-/*
-Volgende is van pagina 26 !!!"
-{
-    var dict = new ConcurrentDictionary<string, int>();
-    dict["k1"] = 42;
-    int r1 = dict.AddOrUpdate("k1", 3, (s, i) => i * 2);
-}
-*/
