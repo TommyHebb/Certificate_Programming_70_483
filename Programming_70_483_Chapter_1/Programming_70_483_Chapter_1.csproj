@@ -86,5 +86,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExerciseClassesObjective1_2\" />
+    <Folder Include="ExerciseClassesObjective1_3\" />
+    <Folder Include="ExerciseClassesObjective1_4\" />
+    <Folder Include="ExerciseClassesObjective1_5\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -14,7 +14,8 @@ namespace Programming_70_483_Chapter_1
             // Present choice of Objective
             bool _isObjectiveNumber;
             string _objectiveName = "";
-            string[] _objectives = new string[5];
+            int _numberOfObjectives = 5;
+            string[] _objectives = new string[_numberOfObjectives];
             _objectives[0] = "ExerciseClassesObjective1_1";
             _objectives[1] = "ExerciseClassesObjective1_2";
             _objectives[2] = "ExerciseClassesObjective1_3";
@@ -28,18 +29,11 @@ namespace Programming_70_483_Chapter_1
             {
                 Console.WriteLine("Please enter the number of the objective of which you wish to run exercises... (Entering nothing quits input) ");
                 _isObjectiveNumber = int.TryParse(Console.ReadLine(), out int _objectiveNumber);
-                if (_isObjectiveNumber && _objectiveNumber > 0 && _objectiveNumber <= 5)
+                if (_isObjectiveNumber && _objectiveNumber > 0 && _objectiveNumber <= _numberOfObjectives)
                 {
-                    if (_objectiveNumber > 1)
-                    {
-                        Console.WriteLine("Objective {0} not yet implemented. Please make a new choice... ", _objectiveNumber);
-                    }
-                    else
-                    {
-                        _objectiveName = _objectives[_objectiveNumber - 1];
-                        Console.WriteLine("The exercises contained in objective {0} are as follows... ", _objectiveNumber);
-                        _isObjectiveNumber = false;
-                    }
+                    _objectiveName = _objectives[_objectiveNumber - 1];
+                    Console.WriteLine("The exercises contained in objective {0} are as follows... ", _objectiveNumber);
+                    _isObjectiveNumber = false;
                 }
                 else if (!_isObjectiveNumber)
                 {
@@ -74,7 +68,7 @@ namespace Programming_70_483_Chapter_1
             bool _isNumber;
             if (_numberOfExercises == 0)
             {
-                Console.WriteLine("Unable to provide list of exercises... ");
+                Console.WriteLine("Unable to provide list of exercises. Most likely there are none in the Objective folder... ");
             }
             else
             { 
