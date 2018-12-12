@@ -15,17 +15,18 @@ namespace Programming_70_483_Chapter_1
         public override void Exec()
         {
             var dict = new ConcurrentDictionary<string, int>();
-            if (dict.TryAdd("k1", 42))
+            if (dict.TryAdd("key1", 42))
             {
-                Console.WriteLine("Added");
+                Console.WriteLine("Added 42 to key1");
             }
-            if (dict.TryUpdate("k1", 21, 42))
+            if (dict.TryUpdate("key1", 21, 42))
             {
-                Console.WriteLine("42 updated to 21");
+                Console.WriteLine("42 updated to 21 for key1");
             }
-            dict["k1"] = 42; // Overwrite unconditionally
-            int r1 = dict.AddOrUpdate("k1", 3, (s, i) => i * 2);
-            int r2 = dict.GetOrAdd("k2", 3);
+            dict["key1"] = 42; // Overwrite unconditionally
+            int r1 = dict.AddOrUpdate("key1", 3, (theKey, theValue) => theValue * 2);
+            int r2 = dict.GetOrAdd("key2", 3);
+            Console.WriteLine("r1 contains {0} and r2 contains {1}", r1, r2);
         }
     }
 }
