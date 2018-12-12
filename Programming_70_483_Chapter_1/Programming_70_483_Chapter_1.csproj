@@ -80,6 +80,8 @@
     <Compile Include="ExerciseClassesObjective1_1\Ex029_ConcurrentCollections_UsingAConcurrentStack.cs" />
     <Compile Include="ExerciseClassesObjective1_1\Ex030_ConcurrentCollections_UsingAConcurrentQueue.cs" />
     <Compile Include="ExerciseClassesObjective1_1\Ex031_ConcurrentCollections_UsingAConcurrentDictionary.cs" />
+    <Compile Include="ExerciseClassesObjective1_2\Ex001_SynchronizingResources_AccessingSharedDataInAMultithreadedApplication.cs" />
+    <Compile Include="ExerciseClassesObjective1_2\Ex002_SynchronizingResources_UsingTheLockKeyword.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -87,7 +89,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ExerciseClassesObjective1_2\" />
     <Folder Include="ExerciseClassesObjective1_3\" />
     <Folder Include="ExerciseClassesObjective1_4\" />
     <Folder Include="ExerciseClassesObjective1_5\" />
