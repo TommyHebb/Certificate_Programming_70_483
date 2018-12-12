@@ -12,7 +12,7 @@ namespace Programming_70_483_Chapter_1
             ArrayTools _arrayTools = new ArrayTools();
 
             // Acquire array of Exercise(s) by system (Array: _exercises)
-            string _nmspace = "Programming_70_483_Chapter_1";
+            string _nmspace = "Programming_70_483_Chapter_1.ExerciseClassesObjective1_1";
             string _startsWith = "Ex";
             var _classes = _arrayTools.GetObjectArrayOfClasses(_nmspace, _startsWith);
             int _numberOfExercises = _classes.Length;
