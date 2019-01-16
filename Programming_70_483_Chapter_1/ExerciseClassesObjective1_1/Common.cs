@@ -21,7 +21,7 @@ namespace Programming_70_483_Chapter_1.ExerciseClassesObjective1_1
             ConsoleTools.Devider('-');
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("ThreadProc: {0}", i); // Used by: Ex001_Thread_Basic AND Ex002_Thread_Background
+                Console.WriteLine("ThreadProc: {0}", i); // Used by: Ex001_Thread_Basic AND Ex002_Thread_Background AND Ex003_Tasks_Basic
                 Thread.Sleep((int)o);
             }
             ConsoleTools.Devider('-');

@@ -18,6 +18,7 @@ namespace Programming_70_483_Chapter_1.ExerciseClassesObjective1_1
             {
                 Console.WriteLine("Working on a thread from threadpool");
             });
+            Console.WriteLine("Done!");
         }
     }
 }
