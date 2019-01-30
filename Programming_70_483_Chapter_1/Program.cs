@@ -19,7 +19,7 @@ namespace Programming_70_483_Chapter_1
             for (int index = 0; index < _numberOfObjectivesInChapter; index++)
             {
                 _objectives[index] = "ExerciseClassesObjective1_" + (index + 1);
-                Console.WriteLine(_objectives[index]);
+                Console.WriteLine(_objectives[index] + "... press " + (index + 1));
             }
             do
             {
