@@ -87,6 +87,8 @@
     <Compile Include="ExerciseClassesObjective1_2\Ex004_SynchronizingResources_CompareAndExchangeAsANonatomicOperation.cs" />
     <Compile Include="ExerciseClassesObjective1_2\Ex005_CancellingTasks_UsingACancellationToken.cs" />
     <Compile Include="ExerciseClassesObjective1_2\Ex006_CancellingTasks_ThrowingOperationCanceledException.cs" />
+    <Compile Include="ExerciseClassesObjective1_2\Ex007_CancellingTasks_AddingAContinuationForCanceledTasks.cs" />
+    <Compile Include="ExerciseClassesObjective1_2\Ex008_CancellingTasks_SettingATimeoutOnATask.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
