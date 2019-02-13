@@ -89,6 +89,8 @@
     <Compile Include="ExerciseClassesObjective1_2\Ex006_CancellingTasks_ThrowingOperationCanceledException.cs" />
     <Compile Include="ExerciseClassesObjective1_2\Ex007_CancellingTasks_AddingAContinuationForCanceledTasks.cs" />
     <Compile Include="ExerciseClassesObjective1_2\Ex008_CancellingTasks_SettingATimeoutOnATask.cs" />
+    <Compile Include="ExerciseClassesObjective1_4\Common.cs" />
+    <Compile Include="ExerciseClassesObjective1_4\Ex001_UnderstandingDelegates_UsingADelegate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -97,7 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ExerciseClassesObjective1_3\" />
-    <Folder Include="ExerciseClassesObjective1_4\" />
     <Folder Include="ExerciseClassesObjective1_5\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
