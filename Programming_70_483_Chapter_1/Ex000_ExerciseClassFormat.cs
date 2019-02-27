@@ -2,7 +2,7 @@
 using System;
 using TommyTools;
 
-namespace Programming_70_483_Chapter_1.ExerciseClassesObjective1_2
+namespace Programming_70_483_Chapter_1.ExerciseClassesObjective1_4
 {
     class Ex000_ExerciseClassFormat : BaseExercise
     {
