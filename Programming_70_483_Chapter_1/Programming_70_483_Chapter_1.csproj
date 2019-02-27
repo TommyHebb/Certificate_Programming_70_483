@@ -92,6 +92,8 @@
     <Compile Include="ExerciseClassesObjective1_4\Common.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Ex001_UnderstandingDelegates_UsingADelegate.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Ex002_UnderstandingDelegates_AMulticastDelegate.cs" />
+    <Compile Include="ExerciseClassesObjective1_4\Ex003_UnderstandingDelegates_CovarianceWithDelegates.cs" />
+    <Compile Include="ExerciseClassesObjective1_4\Ex004_UnderstandingDelegates_ContravarianceWithDelegates.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

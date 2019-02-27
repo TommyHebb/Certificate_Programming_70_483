@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using TommyTools;
 
 namespace Programming_70_483_Chapter_1.ExerciseClassesObjective1_4
@@ -7,6 +8,8 @@ namespace Programming_70_483_Chapter_1.ExerciseClassesObjective1_4
     {
         public delegate int Calculate(int x, int y); // Used by: Ex001_UnderstandingDelegates_UsingADelegate
         public delegate void Delegate002(); // Used by: Ex002_UnderstandingDelegates_AMulticastDelegate
+        public delegate TextWriter CovarianceDelegate(); // Used by: Ex003_UnderstandingDelegates_CovarianceWithDelegates
+        public delegate void ContravarianceDelegate(StreamWriter writer); // Used by: Ex004_UnderstandingDelegates_ContravarianceWithDelegates
 
         public int Add(int x, int y)
         {
@@ -28,5 +31,20 @@ namespace Programming_70_483_Chapter_1.ExerciseClassesObjective1_4
             Console.WriteLine("MethodTwo"); // Used by: Ex002_UnderstandingDelegates_AMulticastDelegate
         }
 
+        public StreamWriter MethodStream()
+        {
+            Console.WriteLine("StreamWriter being used... "); // Used by: Ex003_UnderstandingDelegates_CovarianceWithDelegates
+            return null;
+        } 
+        public StringWriter MethodString()
+        {
+            Console.WriteLine("StringWriter being used... "); // Used by: Ex003_UnderstandingDelegates_CovarianceWithDelegates
+            return null;
+        }
+
+        public void Write(TextWriter writer)
+        {
+            Console.WriteLine("Write, write, write, ... {0} ", writer.GetType()); // Used by: Ex004_UnderstandingDelegates_ContravarianceWithDelegates
+        }
     }
 }
