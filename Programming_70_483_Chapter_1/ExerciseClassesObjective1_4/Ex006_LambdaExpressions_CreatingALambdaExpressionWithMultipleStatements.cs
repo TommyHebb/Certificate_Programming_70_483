@@ -3,13 +3,13 @@ using TommyTools;
 
 namespace Programming_70_483_Chapter_1.ExerciseClassesObjective1_4
 {
-    class Ex006_UnderstandingDelegates_CreatingALambdaExpressionWithMultipleStatements : BaseExercise
+    class Ex006_LambdaExpressions_CreatingALambdaExpressionWithMultipleStatements : BaseExercise
     {
-        public override string Name { get; set; } = "UnderstandingDelegates - Creating a Lambda Expression with Multiple Statements";
+        public override string Name { get; set; } = "LambdaExpressions - Creating a Lambda Expression with Multiple Statements";
 
         public override int Number { get; set; } = 6;
 
-        public Ex006_UnderstandingDelegates_CreatingALambdaExpressionWithMultipleStatements() { }
+        public Ex006_LambdaExpressions_CreatingALambdaExpressionWithMultipleStatements() { }
 
         public override void Exec()
         {

@@ -95,7 +95,8 @@
     <Compile Include="ExerciseClassesObjective1_4\Ex003_UnderstandingDelegates_CovarianceWithDelegates.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Ex004_UnderstandingDelegates_ContravarianceWithDelegates.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Ex005_LambdaExpressions_LambdaExpressionToCreateADelegate.cs" />
-    <Compile Include="ExerciseClassesObjective1_4\Ex006_UnderstandingDelegates_CreatingALambdaExpressionWithMultipleStatements.cs" />
+    <Compile Include="ExerciseClassesObjective1_4\Ex006_LambdaExpressions_CreatingALambdaExpressionWithMultipleStatements.cs" />
+    <Compile Include="ExerciseClassesObjective1_4\Ex007_LambdaExpressions_UsingTheActionDelegate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
