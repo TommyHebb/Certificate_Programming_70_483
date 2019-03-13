@@ -109,6 +109,7 @@
     <Compile Include="ExerciseClassesObjective1_4\Pub4.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Pub5.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Pub6.cs" />
+    <Compile Include="ExerciseClassesObjective1_5\Ex001_Exceptions_ParsingAnInvalidNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -117,7 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ExerciseClassesObjective1_3\" />
-    <Folder Include="ExerciseClassesObjective1_5\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
