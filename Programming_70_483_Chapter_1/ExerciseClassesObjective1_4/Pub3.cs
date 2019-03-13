@@ -2,7 +2,7 @@
 
 namespace Programming_70_483_Chapter_1.ExerciseClassesObjective1_4
 {
-    class Pub3
+    public class Pub3
     {
         public event EventHandler<MyArgs> OnChange = delegate { };
 
