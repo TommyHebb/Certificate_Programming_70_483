@@ -99,11 +99,16 @@
     <Compile Include="ExerciseClassesObjective1_4\Ex007_LambdaExpressions_UsingTheActionDelegate.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Ex008_Events_UsingAnActionToExposeAnEvent.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Ex009_Events_CustomEventArguments.cs" />
+    <Compile Include="ExerciseClassesObjective1_4\Ex010_Events_CustomEventAccessor.cs" />
+    <Compile Include="ExerciseClassesObjective1_4\Ex011_Events_ExceptionWhenRaisingAnEvent.cs" />
+    <Compile Include="ExerciseClassesObjective1_4\Ex012_Events_ManuallyRaisingEventsWithExceptionHandling.cs" />
     <Compile Include="ExerciseClassesObjective1_4\MyArgs.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Pub1.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Pub2.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Pub3.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Pub4.cs" />
+    <Compile Include="ExerciseClassesObjective1_4\Pub5.cs" />
+    <Compile Include="ExerciseClassesObjective1_4\Pub6.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
