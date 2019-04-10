@@ -109,9 +109,15 @@
     <Compile Include="ExerciseClassesObjective1_4\Pub4.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Pub5.cs" />
     <Compile Include="ExerciseClassesObjective1_4\Pub6.cs" />
+    <Compile Include="ExerciseClassesObjective1_5\Common.cs" />
     <Compile Include="ExerciseClassesObjective1_5\Ex001_Exceptions_ParsingAnInvalidNumber.cs" />
     <Compile Include="ExerciseClassesObjective1_5\Ex002_Exceptions_CatchingAFormatException.cs" />
     <Compile Include="ExerciseClassesObjective1_5\Ex003_Exceptions_CatchingDifferentExceptionTypes.cs" />
+    <Compile Include="ExerciseClassesObjective1_5\Ex004_Exceptions_UsingAFinallyBlock.cs" />
+    <Compile Include="ExerciseClassesObjective1_5\Ex005_Exceptions_UsingEnvironmentFailFast.cs" />
+    <Compile Include="ExerciseClassesObjective1_5\Ex006_Exceptions_InspectingAnException.cs" />
+    <Compile Include="ExerciseClassesObjective1_5\Ex007_Exceptions_ThrowingAnArgumentNullException.cs" />
+    <Compile Include="ExerciseClassesObjective1_5\Ex008_Exceptions_UsingExceptionDispatchInfoThrow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

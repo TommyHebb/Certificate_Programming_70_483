@@ -4,7 +4,7 @@ using TommyTools;
 
 namespace Programming_70_483_Chapter_1.ExerciseClassesObjective1_4
 {
-    class Common
+    public class Common
     {
         public delegate int Calculate(int x, int y); // Used by: Ex001_UnderstandingDelegates_UsingADelegate, 
         // Ex005_LambdaExpressions_LambdaExpressionToCreateADelegate and Ex006_UnderstandingDelegates_CreatingALambdaExpressionWithMultipleStatements
