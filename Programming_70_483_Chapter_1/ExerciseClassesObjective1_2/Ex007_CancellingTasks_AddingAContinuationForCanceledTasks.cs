@@ -22,7 +22,6 @@ namespace Programming_70_483_Chapter_1.ExerciseClassesObjective1_2
 
         public override void Exec()
         {
-
             CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
             CancellationToken token = cancellationTokenSource.Token;
             Task task = Task.Run(() =>
