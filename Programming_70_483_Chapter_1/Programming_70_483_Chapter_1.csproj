@@ -118,6 +118,7 @@
     <Compile Include="ExerciseClassesObjective1_5\Ex006_Exceptions_InspectingAnException.cs" />
     <Compile Include="ExerciseClassesObjective1_5\Ex007_Exceptions_ThrowingAnArgumentNullException.cs" />
     <Compile Include="ExerciseClassesObjective1_5\Ex008_Exceptions_UsingExceptionDispatchInfoThrow.cs" />
+    <Compile Include="ExerciseClassesObjective1_5\OrderProcessingException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
